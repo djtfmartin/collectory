@@ -16,9 +16,9 @@
           }
         </script>
     </head>
-    <body id="page-collections-map" onload="initMap(COLLECTIONS_MAP_OPTIONS)">
+    <body id="page-collections-map" onload="initMap(COLLECTIONS_MAP_OPTIONS)" class="collectory-datasets">
     <div id="content">
-      <div id="header">
+      <div id="header" class="heading-bar">
         <!--Breadcrumbs-->
         <div id="breadcrumb">
           <ol class="breadcrumb">

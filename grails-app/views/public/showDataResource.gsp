@@ -33,9 +33,9 @@
     </r:script>
     <r:require modules="fancybox, jquery_jsonp, jstree, jquery_ui_custom, charts, datadumper"/>
 </head>
-<body class="nav-datasets">
+<body class="nav-datasets collectory-dataresource">
 <div id="content">
-<div id="header" class="collectory">
+<div id="header" class="collectory heading-bar">
     <!--Breadcrumbs-->
     <div id="breadcrumb">
         <ol class="breadcrumb">

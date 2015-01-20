@@ -30,9 +30,9 @@
     </script>
 </head>
 
-<body class="two-column-right">
+<body class="two-column-right collectory-dataprovider">
 <div id="content">
-    <div id="header" class="collectory">
+    <div id="header" class="collectory heading-bar">
         <!--Breadcrumbs-->
         <div id="breadcrumb">
             <ol class="breadcrumb">

@@ -5,9 +5,9 @@
         <meta name="layout" content="${grailsApplication.config.ala.skin}" />
         <title>${fieldValue(bean: instance, field: "name")} | Data sets | Atlas of Living Australia</title>
     </head>
-    <body class="two-column-right">
+    <body class="two-column-right collectory-temp-dataresource">
       <div id="content">
-        <div id="header" class="collectory">
+        <div id="header" class="collectory heading-bar">
           <div id="breadcrumb">
             <ol class="breadcrumb">
                 <li><cl:breadcrumbTrail/> <span class=" icon icon-arrow-right"></span></li>

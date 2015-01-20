@@ -29,10 +29,10 @@
           });
         </r:script>
     </head>
-    <body class="two-column-right">
+    <body class="two-column-right collectory-collection">
       <div id="content">
 
-        <div id="header" class="collectory">
+        <div id="header" class="collectory heading-bar">
           <!--Breadcrumbs-->
           <div id="breadcrumb">
             <ol class="breadcrumb">

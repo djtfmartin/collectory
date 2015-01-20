@@ -16,10 +16,9 @@
       });
     </script>
   </head>
-
-  <body id="page-datasets" class="nav-datasets">
+  <body id="page-datasets" class="nav-datasets collectory-datasets">
     <div id="content">
-        <div id="header">
+      <div id="header" class="heading-bar">
         <!--Breadcrumbs-->
         <div id="breadcrumb">
             <ol class="breadcrumb">

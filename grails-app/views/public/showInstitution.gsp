@@ -29,9 +29,9 @@
     </r:script>
 </head>
 
-<body>
+<body class="collectory-institution">
 <div id="content">
-    <div id="header" class="collectory">
+    <div id="header" class="collectory heading-bar">
         <!--Breadcrumbs-->
         <div id="breadcrumb">
             <ol class="breadcrumb">

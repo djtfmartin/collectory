@@ -72,4 +72,7 @@ modules = {
         resource url:'js/charts2.js'
         resource url:'js/charts.js'
     }
+    uk {
+        resource url: 'http://www.cerulean.co.nz/atlas/css/uk-wildlife.css'
+    }
 }

@@ -4,21 +4,27 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UK Wildlife Portal</title>
-
-  <g:render template="/layouts/global"/>
-  <r:require modules="jquery, jquery_i18n, application, collectory" />
-
+  <title><g:layoutTitle /></title>
   <style>
   #page-header .inner { display: none;}
   .inner-search-form { display: none;}
   </style>
 
+  <g:render template="/layouts/global"/>
+  <r:require modules="jquery, jquery_i18n, application, collectory, uk" />
   <r:layoutResources/>
   <g:layoutHead />
-</head>
 
-<body>
+  <!-- Robins imports -->
+  <script src="http://use.typekit.net/whd1tbp.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="http://www.cerulean.co.nz/atlas/js/uk-wildlife.js"></script>
+  <!-- end of Robins imports -->
+  <!--[if lt IE 9]>
+  <script src="bootstrap/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body class="${pageProperty(name:'body.class')?:''}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
 <div class="wrap">
   <!-- start global header -->
   <div class="switcher-bar">
@@ -26,7 +32,7 @@
       <ul>
         <li><a href="http://www.nbn.org.uk/">NBN</a></li>
         <li><a href="https://data.nbn.org.uk/">UK Gateway</a></li>
-        <li class="active"><a href="/">UK Wildlife Portal</a></li>
+        <li class="active"><a href="/">${grailsApplication.config.projectName}</a></li>
         <li><a href="http://www.consultantsportal.uk/">Consultants Portal</a></li>
         <li><a href="http://forums.nbn.org.uk/">NBN Forum</a></li>
       </ul>
@@ -34,7 +40,7 @@
   </div>
   <div class="header-bar">
     <header class="container">
-      <h1><a href="/">UK Wildlife Portal</a></h1>
+      <h1><a href="/">${grailsApplication.config.projectName}</a></h1>
       <a class="nbn-logo" href="http://www.nbn.org.uk/"><img src="http://www.cerulean.co.nz/atlas/images/logo-nbn.png" alt="NBN: National Biodiversity Network"></a>
       <nav class="secondary-nav visible-desktop">
         <ul>
@@ -126,22 +132,11 @@
   </div>
   <div class="footer-bar-bottom">
     <div class="container">
-      <p>© National Biodiversity Network 2015 • By using this site you accept to be bound by the UK Wildlife Portal <a href="#">Terms &amp; Conditions</a> and our <a href="#">Cookies &amp; Privacy Policy</a>. Powered by <a href="http://www.ala.org.au/">Atlas of Living Australia</a>.</p>
+      <p>© National Biodiversity Network 2015 • By using this site you accept to be bound by the ${grailsApplication.config.projectName} <a href="#">Terms &amp; Conditions</a> and our <a href="#">Cookies &amp; Privacy Policy</a>. Powered by <a href="http://www.ala.org.au/">Atlas of Living Australia</a>.</p>
     </div>
   </div>
 </footer>
 <!-- end global footer -->
 <r:layoutResources/>
-
-<!-- Robins imports -->
-<link href="http://www.cerulean.co.nz/atlas/css/uk-wildlife.css" rel="stylesheet">
-<script src="http://use.typekit.net/whd1tbp.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-<script src="http://www.cerulean.co.nz/atlas/js/uk-wildlife.js"></script>
-<!-- end of Robins imports -->
-
-<!--[if lt IE 9]>
-	<script src="bootstrap/js/html5shiv.js"></script>
-    <![endif]-->
 </body>
 </html>
