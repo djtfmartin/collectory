@@ -81,7 +81,7 @@ function loadFacetCharts(chartOptions) {
     chartsDiv.append($("<span>Loading charts...</span>"));
     var query = chartOptions.query ? chartOptions.query : buildQueryString(chartOptions.instanceUid);
     $.ajax({
-      url: urlConcat(biocacheServicesUrl, "/occurrences/search.json?pageSize=0&q=") + query,
+      url: urlConcat(biocacheServicesUrl, "/occurrences/search.json?flimit=5000&pageSize=0&q=") + query,
       dataType: 'jsonp',
       error: function() {
         cleanUp();
